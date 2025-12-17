@@ -5,7 +5,7 @@ Gestor de Cobranzas Automático
 
 Requisitos Previos
     Debes tener instalada una versión reciente de Python.
-    Requerida obligatoriamente para que pywhatkit pueda cargar WhatsApp Web y enviar los mensajes.
+    Conexion a internet requerida obligatoriamente para que pywhatkit pueda cargar WhatsApp Web y enviar los mensajes.
     Debes tener una sesión activa de WhatsApp Web en tu navegador predeterminado.
     Es fundamental instalar las librerías necesarias, se indica un requeriments.txt con esto.
 
