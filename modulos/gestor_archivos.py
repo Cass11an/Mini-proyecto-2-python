@@ -1,13 +1,17 @@
 import csv
 from datetime import datetime
+import os
 
 fecha = datetime.now()
 fechaActual = fecha.strftime('%d/%m/%Y')
 
 def abrirArchivo():
     deudores = []
+    ubicacionActual = os.path.dirname(os.path.abspath(__file__))
+    ubicacionCSV = os.path.join(ubicacionActual, "..", "clientes.csv")
+
     try:
-        with open("proyectos\mini proyecto 2\clientes.csv", "r") as file:
+        with open(ubicacionCSV, "r") as file:
             archivo = csv.DictReader(file, delimiter= ',')
             for row in archivo:
                 fechaVencimiento = datetime.strptime(row['FechaVencim'],'%d/%m/%Y')
@@ -22,11 +26,17 @@ def abrirArchivo():
 
 
 def archivoFacturas(deudores):
+    ubicacionActual = os.path.dirname(os.path.abspath(__file__))
+    ubicacionFacturas = os.path.join(ubicacionActual, "..", "facturas")
+
+    if not os.path.exists(ubicacionFacturas):
+            os.makedirs(ubicacionFacturas)
+
     try: 
         for i in range(len(deudores)):
 
-            ubicacion = "proyectos\\mini proyecto 2\\facturas\\" 
             nombreArchivo = 'factura ' + deudores[i]['Nombre'] + '.txt'
+            ubicacion = os.path.join(ubicacionFacturas, nombreArchivo)
 
             contenido = f"""
                 *************************************************
