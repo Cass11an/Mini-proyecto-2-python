@@ -1,0 +1,18 @@
+
+                *************************************************
+                *           AVISO DE COBRO PENDIENTE            *
+                *************************************************
+
+                [FECHA DE GENERACION: 17/12/2025]
+
+                --- DATOS DEL CLIENTE ---
+                NOMBRE: Ana Beltran
+                TELEFONO DE CONTACTO: 584242645347
+
+                --- DETALLES DE LA DEUDA ---
+                MONTO PENDIENTE:    5250.0 Bs
+                FECHA DE VENCIMIENTO: 12/12/2025
+
+                Por favor, complete el pago antes de la fecha de 
+                vencimiento para evitar la interrupcion del servicio.
+                ************************************************* 
