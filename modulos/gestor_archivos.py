@@ -57,7 +57,7 @@ def archivoFacturas(deudores):
                 vencimiento para evitar la interrupcion del servicio.
                 ************************************************* """
 
-            document = open(f"{ubicacion}{nombreArchivo}", "w")
+            document = open(f"{ubicacion}", "w")
             document.write(contenido)
             document.close()
         return print(f'Se ha generado la factura de los clientes con deuda')
